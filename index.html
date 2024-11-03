@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы от студентов ФУ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Навигационная панель -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>StudyWithUs</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#about">О нас</a>
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#courses">Курсы</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Секция УТП -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Знания от тех, кто говорит на вашем языке</h1>
+                    <p>Подготовка к экзаменам и углубленное изучение предметов от студентов Финансового университета</p>
+                    <a href="#courses" class="cta-button">Выбрать курс</a>
+                </div>
+                <div class="survey-banner">
+                    <p>Помогите нам стать лучше!</p>
+                    <a href="#" class="survey-link">Пройти опрос о желаемых курсах</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция о концепции -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>Наша концепция</h2>
+                <div class="concept-grid">
+                    <div class="concept-item">
+                        <i class="fas fa-users"></i>
+                        <h3>На одной волне</h3>
+                        <p>Мы недавно были на вашем месте и знаем, как объяснить сложное простым языком</p>
+                    </div>
+                    <div class="concept-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Актуальные знания</h3>
+                        <p>Делимся современными подходами и актуальными методиками подготовки</p>
+                    </div>
+                    <div class="concept-item">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Выезжаем мы, а не вы!</h3>
+                        <p>С согласия школы, мы проводим занятия прямо в вашем образовательном учреждении</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция преимуществ -->
+        <section id="advantages" class="advantages-section">
+            <div class="container">
+                <h2>Почему мы?</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Доступные цены</h3>
+                        <p>Качественное образование по студенческим ценам</p>
+                    </div>
+                    <div class="advantage-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Точечный подход</h3>
+                        <p>Мы разрабатываем курсы без воды</p>
+                    </div>
+                    <div class="advantage-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Опыт прохождения</h3>
+                        <p>Мы знаем, какого учиться - и потому лучше подходим к своему преподаванию</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция каталога курсов -->
+        <section id="courses" class="courses-section">
+            <div class="container">
+                <h2>Наши курсы</h2>
+
+                <!-- Курсы для 7-9 классов -->
+                <div class="course-category">
+                    <h3>Курсы для 7-9 классов</h3>
+
+                    <div class="course-subcategory">
+                        <h4>Подготовка к ОГЭ (9 класс)</h4>
+                        <div class="courses-grid">
+                            <div class="course-card" data-course="oge-math">
+                                <div class="course-header">
+                                    <i class="fas fa-calculator"></i>
+                                    <h5>Математика ОГЭ</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Подготовка к ОГЭ по математике с нуля</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="oge-informatics">
+                                <div class="course-header">
+                                    <i class="fas fa-laptop-code"></i>
+                                    <h5>Информатика ОГЭ</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Подготовка к ОГЭ по информатике</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="oge-russian">
+                                <div class="course-header">
+                                    <i class="fas fa-language"></i>
+                                    <h5>Русский язык ОГЭ</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Подготовка к ОГЭ по русскому языку</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="oge-social">
+                                <div class="course-header">
+                                    <i class="fas fa-users"></i>
+                                    <h5>Обществознание ОГЭ</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Подготовка к ОГЭ по обществознанию</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-subcategory">
+                        <h4>Занимательные курсы (7-9 классы)</h4>
+                        <div class="courses-grid">
+                            <div class="course-card" data-course="fun-math">
+                                <div class="course-header">
+                                    <i class="fas fa-square-root-alt"></i>
+                                    <h5>Занимательная математика</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Интересные задачи и головоломки по математике</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="fun-russian">
+                                <div class="course-header">
+                                    <i class="fas fa-book"></i>
+                                    <h5>Занимательный русский</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Увлекательное изучение русского языка</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="fun-informatics">
+                                <div class="course-header">
+                                    <i class="fas fa-code"></i>
+                                    <h5>Занимательная информатика</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Основы программирования и алгоритмики</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Курсы для 10-11 классов -->
+                <div class="course-category">
+                    <h3>Курсы для 10-11 классов</h3>
+
+                    <div class="course-subcategory">
+                        <h4>Подготовка к ЕГЭ</h4>
+                        <div class="courses-grid">
+                            <div class="course-card" data-course="ege-math">
+                                <div class="course-header">
+                                    <i class="fas fa-calculator"></i>
+                                    <h5>Профильная математика ЕГЭ</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Подготовка к профильному ЕГЭ по математике</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="ege-russian">
+                                <div class="course-header">
+                                    <i class="fas fa-language"></i>
+                                    <h5>Русский язык ЕГЭ</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Подготовка к ЕГЭ по русскому языку</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="ege-social">
+                                <div class="course-header">
+                                    <i class="fas fa-users"></i>
+                                    <h5>Обществознание ЕГЭ</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Подготовка к ЕГЭ по обществознанию</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-subcategory">
+                        <h4>Занимательные курсы</h4>
+                        <div class="courses-grid">
+                            <div class="course-card" data-course="fun-stats">
+                                <div class="course-header">
+                                    <i class="fas fa-chart-pie"></i>
+                                    <h5>Занимательная статистика</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Основы статистики и анализа данных</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                            <div class="course-card" data-course="success-course">
+                                <div class="course-header">
+                                    <i class="fas fa-star"></i>
+                                    <h5>Успешный специалист XXI века</h5>
+                                </div>
+                                <div class="course-details">
+                                    <p>Развитие soft skills и подготовка к будущей карьере</p>
+                                    <button class="details-btn">Подробнее</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция FAQ -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Как проходят занятия?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Занятия проводятся как в очном формате, так и онлайн. Длительность одного занятия - 90
+                                минут. В группах не более 8 человек, что позволяет уделить внимание каждому ученику.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Кто преподаватели?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Наши преподаватели - студенты старших курсов Финансового университета, имеющие высокие
+                                баллы ЕГЭ и успешный опыт подготовки учеников.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Сколько стоит обучение?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Стоимость зависит от выбранного курса и формата обучения. Мы предлагаем гибкую систему
+                                оплаты и специальные предложения при записи на несколько курсов.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Как записаться на курс?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Оставьте заявку через форму на сайте или свяжитесь с нами по указанным контактам. Наш
+                                менеджер свяжется с вами в течение дня для уточнения деталей.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция контактов и формы -->
+        <section id="contacts" class="contacts-section">
+            <div class="container">
+                <div class="contacts-grid">
+                    <div class="contact-info">
+                        <h2>Наши контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+7 (385) 256-92-69</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>Моор Светлана Анатольевна</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>г. Барнаул, Проспект Ленина, д. 54</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://vk.com/finuniver.abiturient" target="_blank" class="social-link"><i
+                                    class="fab fa-vk"></i></a>
+                            <a href="https://t.me/finuniverbarnaul" target="_blank" class="social-link"><i
+                                    class="fab fa-telegram"></i></a>
+                            <a href="https://api.whatsapp.com/send/?phone=79231613893" target="_blank"
+                                class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.5889562589644!2d83.77729687677872!3d53.34670667797755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42dda46fb0c1d9b9%3A0xd940e3d67c54b0c3!2z0L_RgNC-0YHQvy4g0JvQtdC90LjQvdCwLCA1NCwg0JHQsNGA0L3QsNGD0LssINCQ0LvRgtCw0LnRgdC60LjQuSDQutGA0LDQuSwgNjU2MDQ5!5e0!3m2!1sru!2sru!4v1708775037377!5m2!1sru!2sru"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Оставить заявку</h2>
+                        <form id="applicationForm">
+                            <div class="form-group">
+                                <label for="name">Ваше имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="course">Интересующий курс</label>
+                                <select id="course" name="course" required>
+                                    <option value="">Выберите курс</option>
+                                    <option value="oge-math">Математика ОГЭ</option>
+                                    <option value="oge-informatics">Информатика ОГЭ</option>
+                                    <option value="oge-russian">Русский язык ОГЭ</option>
+                                    <option value="oge-social">Обществознание ОГЭ</option>
+                                    <option value="fun-math">Занимательная математика</option>
+                                    <option value="fun-russian">Занимательный русский</option>
+                                    <option value="fun-informatics">Занимательная информатика</option>
+                                    <option value="ege-math">Профильная математика ЕГЭ</option>
+                                    <option value="ege-russian">Русский язык ЕГЭ</option>
+                                    <option value="ege-social">Обществознание ЕГЭ</option>
+                                    <option value="fun-stats">Занимательная статистика</option>
+                                    <option value="success-course">Успешный специалист XXI века</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" rows="4"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" required>
+                                    <span class="checkmark"></span>
+                                    Я согласен на обработку персональных данных
+                                </label>
+                            </div>
+                            <button type="submit" class="submit-btn">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>StudyWithUs</h3>
+                    <p>Образование со студенческим подходом</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#advantages">Преимущества</a></li>
+                            <li><a href="#courses">Курсы</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Курсы</h4>
+                        <ul>
+                            <li><a href="#oge">Подготовка к ОГЭ</a></li>
+                            <li><a href="#ege">Подготовка к ЕГЭ</a></li>
+                            <li><a href="#fun">Занимательные курсы</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +7 (385) 256-92-69</li>
+                            <li><i class="fas fa-envelope"></i> Моор Светлана Анатольевна</li>
+                            <li><i class="fas fa-map-marker-alt"></i> г. Барнаул, Проспект Ленина, д. 54</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 StudyWithUs. Все права защищены.</p>
+                    <div class="footer-social">
+                        <a href="https://vk.com/finuniver.abiturient" target="_blank"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/finuniverbarnaul" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=79231613893" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Модальное окно для деталей курса -->
+    <div id="courseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalContent">
+                <div class="course-info">
+                    <div class="info-block">
+                        <h3>Программа курса</h3>
+                        <ul id="courseProgram"></ul>
+                    </div>
+                    <div class="info-block">
+                        <h3>Количество занятий</h3>
+                        <p id="courseDuration"></p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Формат занятий</h3>
+                        <p id="courseFormat"></p>
+                    </div>
+                    <div class="info-block">
+                        <h3>Стоимость</h3>
+                        <p id="coursePrice"></p>
+                    </div>
+                </div>
+                <button class="enroll-btn">Записаться на курс</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка "Наверх" -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Скрипты -->
+    <script src="script.js"></script>
+</body>
+
+</html>
