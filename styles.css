@@ -79,6 +79,18 @@ p {
     padding: 1rem 20px;
 }
 
+.logo {
+    height: 40px;
+    /* Установите желаемую высоту логотипа */
+}
+
+
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
 .logo h1 {
     color: var(--white-color);
     font-weight: 500;
@@ -154,6 +166,7 @@ p {
     height: 100%;
     background: url('path-to-your-pattern.svg') repeat;
     opacity: 0.1;
+    pointer-events: none;
 }
 
 .hero-content {
@@ -200,6 +213,8 @@ p {
     border-radius: 10px;
     margin-top: 2rem;
     text-align: center;
+    position: relative;
+    z-index: 3;
 }
 
 .survey-banner p {
@@ -211,6 +226,11 @@ p {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: 500;
+    position: relative;
+    z-index: 4;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
 }
 
 .survey-link:hover {
@@ -700,6 +720,12 @@ p {
 
 .close-modal:hover {
     color: var(--accent-color);
+}
+
+.first-block {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
 .course-info {

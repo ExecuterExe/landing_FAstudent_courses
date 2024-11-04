@@ -38,8 +38,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Геометрические задачи',
                 'Решение текстовых задач'
             ],
+            lifehack: [
+                'первое',
+                'второе'
+            ],
             duration: '22',
-            format: 'Очно, 1 раз в неделю по 45 минут',
+            format: 'Очный',
             price: 'Договорная'
         },
         'oge-informatics': {
@@ -55,6 +59,176 @@ document.addEventListener('DOMContentLoaded', function () {
             format: 'Очно, 1 раз в неделю по 45 минут',
             price: 'Договорная'
         },
+        'oge-russian': {
+            title: 'Русский язык ОГЭ',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'oge-social': {
+            title: 'Обществознание ОГЭ',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'fun-math': {
+            title: 'Занимательная математика',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'fun-russian': {
+            title: 'Занимательный русский',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'fun-informatics': {
+            title: 'Занимательная информатика',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'ege-math': {
+            title: 'Математика ЕГЭ (профильная)',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'ege-russian': {
+            title: 'Русский ЕГЭ',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'ege-social': {
+            title: 'Обществознание ЕГЭ',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'fun-stats': {
+            title: 'Занимательная статистика',
+            program: [
+                '',
+                '',
+                '',
+                '',
+                ''
+            ],
+            lifehack: [
+                '',
+                ''
+            ],
+            duration: '',
+            format: 'Очный',
+            price: 'Договорная'
+        },
+        'success-course': {
+            title: 'Курс успешного специалиста XXI века',
+            program: [
+                'Сбережения и инвестиции',
+                'Эффективные публичные выступления',
+                'Как выжить в конкурентном океане',
+                'Как взять предпринимательскую идею за хвост',
+                ''
+            ],
+            lifehack: [
+                'Прокачка уверенности в себе',
+                'Понимание тонкостей успеха во взрослом мире'
+            ],
+            duration: '8',
+            format: 'Очный',
+            price: 'Договорная'
+        }
     };
 
     courseCards.forEach(card => {
@@ -70,6 +244,13 @@ document.addEventListener('DOMContentLoaded', function () {
                     const li = document.createElement('li');
                     li.textContent = item;
                     programList.appendChild(li);
+                });
+                const lifehackList = document.getElementById('courseLifehacks');
+                lifehackList.innerHTML = '';
+                courseData.lifehack.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    lifehackList.appendChild(li);
                 });
                 document.getElementById('courseDuration').textContent = courseData.duration;
                 document.getElementById('courseFormat').textContent = courseData.format;
