@@ -25,9 +25,9 @@
                     <a href="#contacts">Контакты</a>
                 </div>
                 <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
                 </div>
             </div>
         </nav>
@@ -399,47 +399,53 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/fa-logo.png" alt="fa-logo">
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Навигация</h4>
-                        <ul>
-                            <li><a href="#about">О нас</a></li>
-                            <li><a href="#advantages">Преимущества</a></li>
-                            <li><a href="#courses">Курсы</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#contacts">Контакты</a></li>
-                        </ul>
+                <!-- Основная информация -->
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img src="assets/fa-logo.png" alt="Логотип">
+                        <p>Подготовка к экзаменам и углубленное изучение предметов от студентов Финансового университета
+                        </p>
                     </div>
-                    <div class="footer-column">
-                        <h4>Курсы</h4>
-                        <ul>
-                            <li><a href="#oge">Подготовка к ОГЭ</a></li>
-                            <li><a href="#ege">Подготовка к ЕГЭ</a></li>
-                            <li><a href="#fun">Занимательные курсы</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Контакты</h4>
-                        <ul>
-                            <li><i class="fas fa-phone"></i> +7 (385) 256-92-69</li>
-                            <li><i class="fas fa-envelope"></i> Моор Светлана Анатольевна</li>
-                            <li><i class="fas fa-map-marker-alt"></i> г. Барнаул, Проспект Ленина, д. 54</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2024. Все права защищены.</p>
                     <div class="footer-social">
-                        <a href="https://vk.com/finuniver.abiturient" target="_blank"><i class="fab fa-vk"></i></a>
-                        <a href="https://t.me/finuniverbarnaul" target="_blank"><i class="fab fa-telegram"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=79231613893" target="_blank"><i
-                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://vk.com/finuniver.abiturient" target="_blank" class="social-link">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="https://t.me/finuniverbarnaul" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=79231613893" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Быстрые ссылки -->
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#advantages">Преимущества</a></li>
+                        <li><a href="#courses">Курсы</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Контакты -->
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +7 (385) 256-92-69</p>
+                        <p><i class="fas fa-user"></i> Моор Светлана Анатольевна</p>
+                        <p><i class="fas fa-map-marker-alt"></i> г. Барнаул, Проспект Ленина, д. 54</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Нижняя часть футера -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Курсы от студентов ФУ. Все права защищены.</p>
+            </div>
+        </div>
     </footer>
 
     <!-- Модальное окно для деталей курса -->
@@ -472,7 +478,7 @@
                         <p id="coursePrice"></p>
                     </div>
                 </div>
-                <button class="enroll-btn">Выбрать курс</button>
+                <button class="enroll-btn" id="enrollButton">Выбрать курс</button>
             </div>
         </div>
     </div>

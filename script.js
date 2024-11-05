@@ -2,11 +2,44 @@ document.addEventListener('DOMContentLoaded', function () {
     // Мобильное меню
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const links = document.querySelectorAll('.nav-links a');
 
-    hamburger.addEventListener('click', function () {
-        navLinks.classList.toggle('active');
+    function toggleMenu() {
+        // Переключаем классы
         hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        // Блокируем/разблокируем скролл
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : 'auto';
+    }
+
+    // Обработчик клика по бургеру
+    hamburger.addEventListener('click', toggleMenu);
+
+    // Закрываем меню при клике на ссылку
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
     });
+
+    // Закрываем меню при ресайзе окна
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+
+    // Закрываем меню при клике вне его
+    document.addEventListener('click', (e) => {
+        if (!hamburger.contains(e.target) &&
+            !navLinks.contains(e.target) &&
+            navLinks.classList.contains('active')) {
+            toggleMenu();
+        }
+    });
+
 
     // FAQ аккордеон
     const faqItems = document.querySelectorAll('.faq-item');

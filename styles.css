@@ -134,16 +134,17 @@ p {
 
 .hamburger {
     display: none;
-    flex-direction: column;
-    gap: 6px;
     cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
 }
 
-.hamburger span {
+.bar {
     width: 25px;
     height: 3px;
-    background-color: var(--primary-color);
-    transition: var(--transition);
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
 }
 
 /* Hero секция */
@@ -625,18 +626,34 @@ p {
     background-color: var(--primary-color);
     color: var(--white-color);
     padding: 60px 0 20px;
+    margin-top: auto;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 3rem;
-    margin-bottom: 2rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footer-logo h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.footer-main {
+    max-width: 400px;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-logo p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 .footer-column h4 {
@@ -661,6 +678,12 @@ p {
     color: var(--accent-color);
 }
 
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
@@ -674,13 +697,14 @@ p {
     gap: 1rem;
 }
 
-.footer-social a {
+.footer-links ul li a {
+    text-decoration: none;
     color: var(--white-color);
     font-size: 1.2rem;
     transition: var(--transition);
 }
 
-.footer-social a:hover {
+.footer-links ul li a:hover {
     color: var(--accent-color);
 }
 
@@ -811,26 +835,27 @@ p {
 }
 
 @media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
     .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--white-color);
-        padding: 1rem;
-        box-shadow: var(--shadow);
+        position: fixed;
+        right: -100%;
+        top: 70px;
         flex-direction: column;
-        text-align: center;
+        background-color: var(--primary-color);
+        width: 100%;
+        height: calc(100vh - 70px);
+        padding: 20px;
+        transition: 0.3s;
+        gap: 20px;
     }
 
     .nav-links.active {
-        display: flex;
+        right: 0;
     }
 
-    .hamburger {
-        display: flex;
-    }
 
     .contacts-grid {
         grid-template-columns: 1fr;
@@ -850,6 +875,32 @@ p {
     .courses-grid {
         grid-template-columns: 1fr;
     }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Стили для ссылок в мобильном меню */
+    .nav-links a {
+        color: var(--white-color);
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
 }
 
 @media (max-width: 480px) {
