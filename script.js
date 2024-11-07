@@ -88,6 +88,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Работа с таблицами',
                 'Логические выражения'
             ],
+            lifehack: [
+                '',
+                ''
+            ],
             duration: '32',
             format: 'Очно, 1 раз в неделю по 45 минут',
             price: 'Договорная'
@@ -288,6 +292,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('courseDuration').textContent = courseData.duration;
                 document.getElementById('courseFormat').textContent = courseData.format;
                 document.getElementById('coursePrice').textContent = courseData.price;
+
+                const enrollButton = document.getElementById('enrollButton');
+                enrollButton.onclick = function () {
+                    // Закрываем модальное окно
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+
+                    // Находим select с курсами и устанавливаем нужное значение
+                    const courseSelect = document.getElementById('course');
+                    courseSelect.value = courseId;
+
+                    // Плавно скроллим к форме
+                    const contactForm = document.getElementById('applicationForm');
+                    contactForm.scrollIntoView({ behavior: 'smooth' });
+
+                    // Добавляем фокус на первое поле формы
+                    document.getElementById('name').focus();
+                };
 
                 modal.style.display = 'block';
                 document.body.style.overflow = 'hidden';
