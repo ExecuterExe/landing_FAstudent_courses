@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Развить навыки правильного оформления заданий с развернутым ответом'
             ],
             duration: '25 занятий',
-            price: '650 руб. за занятие'
+            price: '550 руб. за занятие'
         },
         'oge-informatics': {
             title: '',
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Научиться быстро анализировать свои ошибки после пробного экзамена для улучшения результатов'
             ],
             duration: '18 занятий',
-            price: '650 руб. за занятие'
+            price: '550 руб. за занятие'
         },
         'oge-social': {
             title: 'Обществознание ОГЭ',
@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Методики быстрого усвоения большого объема информации по экономике и праву'
             ],
             duration: '42 занятия (1-2 р. в неделю)',
-            price: '650 руб. за занятие'
+            price: '550 руб. за занятие'
         },
         'fun-math': {
             title: 'Занимательная математика',
